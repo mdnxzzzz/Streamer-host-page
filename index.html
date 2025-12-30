@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEII | PORTFOLIO OFICIAL</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="new_jeans.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+    <div class="main-container">
+
+        <!-- Navigation -->
+        <header class="fade-in">
+            <div class="brand">
+                <img src="seii_pfp.png" alt="SEII">
+                SEII
+            </div>
+            <nav class="nav-links">
+                <a href="#about">SOBRE MÍ</a>
+                <a href="#content">CONTENIDO</a>
+                <a href="#contact">CONTACTO</a>
+                <button id="fs-toggle" class="fs-btn" title="Pantalla Completa">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Bento Grid Main Content -->
+        <div class="bento-grid">
+
+            <!-- 1. Profile Panel (Sidebar) -->
+            <aside class="panel profile-panel slide-in-left">
+                <img src="seii_pfp.png" alt="Seii Profile" class="big-pfp">
+                <h1>SEII</h1>
+
+                <div class="stats-row">
+                    <div class="stat-item" style="width: 100%;">
+                        <h4>220K+</h4>
+                        <span>SEGUIDORES TOTALES</span>
+                    </div>
+                </div>
+
+                <div class="social-stack">
+                    <a href="https://www.twitch.tv/seii__" target="_blank" class="social-btn twitch">
+                        <i class="fab fa-twitch"></i> TWITCH
+                    </a>
+                    <a href="https://www.tiktok.com/@seii____" target="_blank" class="social-btn"
+                        style="background: linear-gradient(90deg, #ff0050, #00f2ea);">
+                        <i class="fab fa-tiktok"></i> CLIPS DE LOCOS
+                    </a>
+                    <a href="https://www.youtube.com/@SRseii" target="_blank" class="social-btn"
+                        style="background: #ff0000;">
+                        <i class="fab fa-youtube"></i> CANAL PRINCIPAL
+                    </a>
+                    <a href="https://discord.gg/seii" target="_blank" class="social-btn" style="background: #5865F2;">
+                        <i class="fab fa-discord"></i> EL SÓTANO
+                    </a>
+                </div>
+            </aside>
+
+            <!-- 2. Featured Content (Wide) -->
+            <section class="panel featured-panel slide-in-right" id="content">
+                <div class="section-header-row">
+                    <div class="section-label">VIRUS MÁS VIRALES</div>
+                    <a href="https://www.youtube.com/@SRseii" target="_blank" class="see-more-link">VER MÁS <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="video-grid-mini">
+
+                    <!-- 1. Verified Video 1 (MyHorror) -->
+                    <a href="https://youtu.be/ZeKcwQcY4QM" target="_blank" class="vid-card-mini pop-in"
+                        style="animation-delay: 0.1s;">
+                        <div class="thumb-mini"
+                            style="background-image: url('https://img.youtube.com/vi/ZeKcwQcY4QM/maxresdefault.jpg')">
+                        </div>
+                        <div class="info-mini">
+                            <h4>1000 VIRUS DE MYHORROR</h4>
+                            <span><i class="fas fa-fire"></i> CAOS TOTAL</span>
+                        </div>
+                    </a>
+
+                    <!-- 2. User Specified Video: Virus Celular vs PC -->
+                    <a href="https://youtu.be/Gev8503dS0Y" target="_blank" class="vid-card-mini pop-in"
+                        style="animation-delay: 0.2s;">
+                        <div class="thumb-mini" style="background-image: url('thumb_virus_vs.png')"></div>
+                        <div class="info-mini">
+                            <h4>VIRUS CELULAR VS PC</h4>
+                            <span><i class="fas fa-desktop"></i> BATALLA MORTAL</span>
+                        </div>
+                    </a>
+
+                    <!-- 3. User Specified Video: Talking Tom 100 Virus -->
+                    <a href="https://youtu.be/FqG8Xb0fXjI" target="_blank" class="vid-card-mini pop-in"
+                        style="animation-delay: 0.3s;">
+                        <div class="thumb-mini" style="background-image: url('thumb_talking_tom.png')"></div>
+                        <div class="info-mini">
+                            <h4>100 VIRUS DE MY TALKING TOM</h4>
+                            <span><i class="fas fa-cat"></i> MY HORROR REVEAL</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+            <!-- 3. Mission / About -->
+            <section class="panel mission-panel slide-in-up" id="about">
+                <div class="section-label">¿QUIÉN SOY?</div>
+                <h2>ROMPO COSAS PARA QUE TÚ NO TENGAS QUE HACERLO.</h2>
+                <p class="mission-text">
+                    Básicamente me dedico a meterle 200 troyanos a ordenadores virtuales para ver qué pasa.
+                    Si el chat dice "descarga eso", yo lo descargo. Spoiler: casi siempre explota todo.
+                    Hago contenido de ciberseguridad (o ciber-desastre, según se mire) y gaming.
+                </p>
+            </section>
+
+            <!-- 4. Contact Footer -->
+            <footer class="contact-strip slide-in-up" id="contact">
+                <div class="contact-left">
+                    <h3>CONTACTO / NEGOCIOS</h3>
+                    <p style="color: #666; font-size: 0.9rem;">Disponible para patrocinios y colaboraciones extremas.
+                    </p>
+                </div>
+                <a href="mailto:seii.contacto.ahora@gmail.com" class="email-link">
+                    seii.contacto.ahora@gmail.com <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+                </a>
+            </footer>
+
+            <!-- 5. Professional Credits Footer -->
+            <footer class="main-footer slide-in-up">
+                <div class="footer-content">
+                    <span class="credit-item">CREADO POR <a href="https://t.me/mdnxzzzz" target="_blank"
+                            class="medina-link">MEDINA</a></span>
+                    <span class="footer-divider">|</span>
+                    <span class="credit-item">PARA SEII</span>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
