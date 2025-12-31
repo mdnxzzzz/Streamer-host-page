@@ -470,6 +470,81 @@ header.visible {
     }
 }
 
+@media (max-width: 768px) {
+    .main-container {
+        padding: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .fs-btn {
+        margin-left: 0;
+    }
+
+    .profile-panel h1 {
+        font-size: 3rem;
+    }
+
+    .big-pfp {
+        width: 140px;
+        height: 140px;
+    }
+
+    .stat-item h4 {
+        font-size: 2rem;
+    }
+
+    .mission-text {
+        font-size: 1rem;
+    }
+
+    .contact-left h3 {
+        font-size: 1.5rem;
+    }
+
+    .email-link {
+        font-size: 1.1rem;
+        word-break: break-all;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .footer-divider {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-panel h1 {
+        font-size: 2.5rem;
+    }
+
+    .panel {
+        padding: 1.5rem;
+    }
+}
+
 /* Footer Credits - Clean & PRO */
 .main-footer {
     grid-column: 1 / 3;
