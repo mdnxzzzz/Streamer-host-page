@@ -450,30 +450,105 @@ header.visible {
     border-bottom-color: var(--accent);
 }
 
+/* =========================================
+   MOBILE LOCK SYSTEM (DENEGADO)
+   ========================================= */
+#mobile-lock {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #050508;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.lock-content {
+    border: 1px solid var(--primary);
+    padding: 3rem 2rem;
+    background: rgba(188, 19, 254, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(188, 19, 254, 0.2);
+    max-width: 400px;
+    position: relative;
+}
+
+.lock-icon {
+    font-size: 4rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    animation: pulse-glow 2s infinite alternate;
+}
+
+@keyframes pulse-glow {
+    0% {
+        filter: drop-shadow(0 0 10px var(--primary));
+        transform: scale(1);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 30px var(--primary));
+        transform: scale(1.05);
+    }
+}
+
+#mobile-lock h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 5px;
+    color: white;
+}
+
+#mobile-lock p {
+    color: var(--accent);
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+.lock-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 2rem 0;
+}
+
+.lock-subtext {
+    color: var(--text-muted) !important;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+}
+
+.lock-footer {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.2);
+    margin-top: 3rem;
+    letter-spacing: 4px;
+}
+
+/* Force blocking on mobile devices */
 @media (max-width: 1024px) {
-    .bento-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 1.5rem !important;
-    }
-
-    .profile-panel,
-    .featured-panel,
-    .mission-panel,
-    .contact-strip,
-    .main-footer {
-        width: 100% !important;
-        grid-column: auto !important;
-        grid-row: auto !important;
-    }
-
-    .video-grid-mini {
-        grid-template-columns: 1fr !important;
+    body {
+        overflow: hidden !important;
     }
 
     .main-container {
-        padding: 1rem !important;
-        overflow-x: hidden !important;
+        display: none !important;
+    }
+
+    #mobile-lock {
+        display: flex !important;
+    }
+
+    .bg-glow,
+    .bg-glow-2 {
+        display: none !important;
     }
 }
 
