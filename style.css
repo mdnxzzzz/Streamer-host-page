@@ -535,20 +535,38 @@ header.visible {
 /* Force blocking on mobile devices */
 @media (max-width: 1024px) {
     body {
+        margin: 0 !important;
+        padding: 0 !important;
         overflow: hidden !important;
+        background: #050508 !important;
     }
 
-    .main-container {
+    .main-container,
+    .bg-glow,
+    .bg-glow-2 {
         display: none !important;
     }
 
     #mobile-lock {
         display: flex !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 
-    .bg-glow,
-    .bg-glow-2 {
-        display: none !important;
+    .lock-content {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+    }
+
+    #mobile-lock h1 {
+        font-size: 1.8rem !important;
+        /* Smaller for mobile */
+        letter-spacing: 2px !important;
+    }
+
+    .lock-icon {
+        font-size: 3rem !important;
     }
 }
 
