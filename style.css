@@ -450,108 +450,79 @@ header.visible {
     border-bottom-color: var(--accent);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .bento-grid {
-        grid-template-columns: 1fr;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
     }
 
-    /* Reset grid child positions for stacking */
     .profile-panel,
     .featured-panel,
     .mission-panel,
     .contact-strip,
     .main-footer {
-        grid-column: 1 / -1 !important;
+        width: 100% !important;
+        grid-column: auto !important;
         grid-row: auto !important;
     }
 
-    .profile-panel {
-        margin-bottom: 2rem;
-    }
-
-    .contact-strip {
-        flex-direction: column;
-        text-align: center;
-        gap: 2rem;
-    }
-
     .video-grid-mini {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+    }
+
+    .main-container {
+        padding: 1rem !important;
+        overflow-x: hidden !important;
     }
 }
 
 @media (max-width: 768px) {
-    .main-container {
-        padding: 1rem;
-    }
-
     header {
-        flex-direction: column;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
-        text-align: center;
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1.5rem !important;
     }
 
     .nav-links {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
+        justify-content: center !important;
+        width: 100% !important;
+        gap: 10px !important;
     }
 
     .nav-links a {
-        margin: 0;
-        font-size: 0.8rem;
-    }
-
-    .fs-btn {
-        margin-left: 0;
+        margin: 0 5px !important;
+        font-size: 0.8rem !important;
     }
 
     .profile-panel h1 {
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
 
     .big-pfp {
-        width: 140px;
-        height: 140px;
+        width: 120px !important;
+        height: 120px !important;
     }
 
-    .stat-item h4 {
-        font-size: 2rem;
-    }
-
-    .mission-text {
-        font-size: 1rem;
-    }
-
-    .contact-left h3 {
-        font-size: 1.5rem;
+    .contact-strip {
+        padding: 2rem 1rem !important;
+        flex-direction: column !important;
+        text-align: center !important;
     }
 
     .email-link {
-        font-size: 1.1rem;
-        word-break: break-all;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
-
-    .footer-divider {
-        display: none;
+        font-size: 1rem !important;
+        word-break: break-all !important;
     }
 }
 
 @media (max-width: 480px) {
     .profile-panel h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem !important;
     }
 
     .panel {
-        padding: 1.5rem;
+        padding: 1.2rem !important;
     }
 }
 
