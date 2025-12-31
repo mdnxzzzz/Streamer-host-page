@@ -455,8 +455,18 @@ header.visible {
         grid-template-columns: 1fr;
     }
 
+    /* Reset grid child positions for stacking */
+    .profile-panel,
+    .featured-panel,
+    .mission-panel,
+    .contact-strip,
+    .main-footer {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
+
     .profile-panel {
-        grid-row: 1;
+        margin-bottom: 2rem;
     }
 
     .contact-strip {
